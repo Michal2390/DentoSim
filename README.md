@@ -55,24 +55,34 @@ Wizualnie aplikacja może przypominać profesjonalne symulatory chirurgiczne, ta
 ## Część III: Scenariusz/Gameplay
 
 ### Elementy rozgrywki jeśli dotyczy:
-Użytkownik wybiera jedną z dostępnych procedur stomatologicznych (np. wyrywanie zęba) i wykonuje ją w realistycznym środowisku. Drugi uczestnik (np. instruktor) może dołączyć do tej samej sesji, aby obserwować przebieg zabiegu, nadzorować działania i udzielać wskazówek w czasie rzeczywistym.
-
-Przebieg zabiegu może być dodatkowo wspomagany przez asystenta LLM, który udziela kontekstowych wskazówek. Aplikacja oferuje dwa główne tryby:
-1.  **Tryb Nauki:** Z podpowiedziami i wsparciem instruktora lub asystenta.
-2.  **Tryb Egzaminu:** Bez wsparcia, weryfikujący nabyte umiejętności.
+Użytkownik wybiera jedną z dostępnych procedur stomatologicznych (np. wyrywanie zęba) i wykonuje ją w realistycznym środowisku, podczas gdy drugi uczestnik może pełnić rolę instruktora i obserwować ten sam zabieg. Przebieg zabiegu wspomaga asystent LLM, udzielając wskazówek.
 
 ### Mechanika gry/aplikacji:
-Symulacja bazuje na realistycznym operowaniu narzędziami i precyzyjnym śledzeniu ich ruchów. System ocenia kluczowe parametry, takie jak kąt pracy narzędzia, siłę nacisku oraz poprawną sekwencję działań.
+Symulacja opiera się na realistycznym operowaniu narzędziami dentystycznymi i reagującą na działania użytkownika. System rejestruje błędy, np. zbyt mocny nacisk lub niewłaściwy kąt pracy, a aplikacja może działać zarówno w trybie nauki z podpowiedziami LLM, jak i w trybie bez wsparcia.
 
 ### Punktacje/osiągnięcia:
-Na koniec każdej procedury użytkownik otrzymuje ocenę opartą na:
-- **Dokładności:** Precyzja wykonania poszczególnych kroków.
-- **Czasie:** Czas ukończenia zabiegu.
-- **Liczbie błędów:** Rejestrowanie nieprawidłowych interakcji.
-- **Płynności:** Efektywność w obsłudze narzędzi.
-Wyniki są zapisywane, co pozwala śledzić postępy.
+Ocena użytkownika obejmuje dokładność wykonania procedury, czas, liczbę błędów oraz płynność obsługi narzędzi, a wyniki przekładają się na rosnący poziom doświadczenia.
 
 ### Mechanika interfejsu użytkownika:
 - **Panele 3D:** Pływające w przestrzeni okna z informacjami o procedurze, statystykami i wyborem narzędzi.
 - **Menu Kontekstowe:** Wywoływane za pomocą gestów, umożliwiające szybki dostęp do opcji.
-- **Wskazówki Asystenta:** Wyświetlane w formie dymków informacyjnych lub (w
+- **Wskazówki Asystenta:** Wyświetlane w formie dymków informacyjnych lub (w przyszłości) komunikatów głosowych.
+
+### Sposób nawigacji,
+Nawigacja odbywa się za pomocą gestów dłoni i śledzenia wzroku, co pozwala na intuicyjną interakcję z panelami UI i narzędziami.
+
+### Zaplanowane/zaprojektowane możliwe interakcje,
+- Wybór i chwytanie narzędzi.
+- Precyzyjne operowanie narzędziami w jamie ustnej pacjenta (wiercenie, podważanie, badanie).
+- Interakcja z panelami UI w celu śledzenia postępów i odczytywania instrukcji.
+
+---
+
+## Część IV: Docelowa platforma
+
+### Platforma:
+Apple Vision (visionOS)
+
+### Minimalne wymagania:
+- Urządzenie: Apple Vision Pro
+- System operacyjny: visionOS 1.0 lub nowszy
