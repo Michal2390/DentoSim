@@ -55,7 +55,9 @@ Wizualnie aplikacja może przypominać profesjonalne symulatory chirurgiczne, ta
 ## Część III: Scenariusz/Gameplay
 
 ### Elementy rozgrywki jeśli dotyczy:
-Użytkownik wybiera jedną z dostępnych procedur stomatologicznych (np. wyrywanie zęba) i wykonuje ją w realistycznym środowisku, podczas gdy drugi uczestnik może pełnić rolę instruktora i obserwować ten sam zabieg. Przebieg zabiegu wspomaga asystent LLM, udzielając wskazówek.
+Użytkownik wybiera jedną z dostępnych procedur stomatologicznych (np. wyrywanie zęba) i wykonuje ją w realistycznym środowisku. Aplikacja oferuje dwa główne tryby:
+1.  **Tryb Nauki:** Z podpowiedziami i wsparciem asystenta LLM. Drugi użytkownik może dołączyć jako instruktor, aby obserwować i na bieżąco udzielać wskazówek.
+2.  **Tryb Egzaminu:** Samodzielne wykonanie procedury bez wsparcia. W tym trybie instruktor (np. profesor) może dołączyć do sesji jako obserwator, aby ocenić pracę studenta. W obu tych przypadkach w jednej sesji może brać udział dwóch użytkowników jednocześnie.
 
 ### Mechanika gry/aplikacji:
 Symulacja opiera się na realistycznym operowaniu narzędziami dentystycznymi i reagującą na działania użytkownika. System rejestruje błędy, np. zbyt mocny nacisk lub niewłaściwy kąt pracy, a aplikacja może działać zarówno w trybie nauki z podpowiedziami LLM, jak i w trybie bez wsparcia.
@@ -69,20 +71,4 @@ Ocena użytkownika obejmuje dokładność wykonania procedury, czas, liczbę bł
 - **Wskazówki Asystenta:** Wyświetlane w formie dymków informacyjnych lub (w przyszłości) komunikatów głosowych.
 
 ### Sposób nawigacji,
-Nawigacja odbywa się za pomocą gestów dłoni i śledzenia wzroku, co pozwala na intuicyjną interakcję z panelami UI i narzędziami.
-
-### Zaplanowane/zaprojektowane możliwe interakcje,
-- Wybór i chwytanie narzędzi.
-- Precyzyjne operowanie narzędziami w jamie ustnej pacjenta (wiercenie, podważanie, badanie).
-- Interakcja z panelami UI w celu śledzenia postępów i odczytywania instrukcji.
-
----
-
-## Część IV: Docelowa platforma
-
-### Platforma:
-Apple Vision (visionOS)
-
-### Minimalne wymagania:
-- Urządzenie: Apple Vision Pro
-- System operacyjny: visionOS 1.0 lub nowszy
+N
