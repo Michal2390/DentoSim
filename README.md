@@ -1,80 +1,71 @@
-# Nazwa Projektu
+# DentoSim – Interaktywna Symulacja Zabiegów Stomatologicznych
 
-DentoSim – Interaktywna Symulacja Zabiegów Stomatologicznych
+## I. Informacje ogólne
 
-## Część I: Informacje ogólne 
-
-### Nazwa aplikacji: 
-
+### Nazwa aplikacji
 DentoSim XR
 
-### Klient: 
+### Klient i Docelowy Odbiorca
+- **Klient:** Firmy szkoleniowe dla stomatologów, uczelnie medyczne, kliniki stomatologiczne, producenci sprzętu dentystycznego.
+- **Docelowy odbiorca:** Studenci stomatologii, młodzi lekarze, higieniści, asystenci stomatologiczni oraz osoby prowadzące szkolenia medyczne.
 
-Firmy szkoleniowe dla stomatologów, uczelnie medyczne, kliniki stomatologiczne, producenci sprzętu dentystycznego (np. mogą zarabiać poprzez sprzedawanie aplikacji).
+### Platforma Docelowa
+Apple Vision (visionOS)
 
-### Docelowy odbiorca: 
+### Cel Aplikacji
+Stworzenie realistycznego symulatora szkoleniowego w środowisku XR (Extended Reality) do nauki i doskonalenia podstawowych zabiegów stomatologicznych. Aplikacja ma na celu umożliwienie bezpiecznego i powtarzalnego ćwiczenia umiejętności manualnych bez ryzyka dla pacjenta, co przekłada się na zdobycie doświadczenia, precyzji i pewności siebie w wykonywaniu procedur medycznych.
 
-Studenci stomatologii, młodzi lekarze przygotowujący się do pracy z pacjentami, higieniści, asystenci stomatologiczni oraz osoby prowadzące szkolenia medyczne.
+### Uzasadnienie
+DentoSim XR obniża koszty szkoleń w porównaniu do tradycyjnych fantomów, jednocześnie zwiększając bezpieczeństwo i efektywność nauki. Umożliwia ćwiczenie rzadkich lub skomplikowanych procedur w kontrolowanym środowisku. W przyszłości wsparcie ze strony asystenta LLM ma dodatkowo podnosić jakość szkolenia poprzez dostarczanie wskazówek w czasie rzeczywistym.
 
-### Docelowe urządzenia: 
+### Główne Ryzyka
+- Zapewnienie wystarczającego poziomu realizmu symulacji.
+- Ograniczenia sprzętowe urządzeń XR.
+- Konieczność stałych konsultacji z ekspertami branżowymi w celu zachowania wierności medycznych procedur.
 
-Apple Vision
+---
 
-### Cel aplikacji/gry: 
+## II. Wygląd i Styl Aplikacji
 
-Realistyczne szkolenie stomatologiczne w środowisku XR, obejmujące symulację podstawowych zabiegów.
+### Dźwięk
+- Realistyczne odgłosy narzędzi stomatologicznych (np. wiertła, ssaki).
+- Sygnały dźwiękowe potwierdzające poprawne wykonanie interakcji.
+- W przyszłości: Głosowy asystent LLM objaśniający procedury.
 
-### Cel ogólny 
+### Przewodni Motyw Wizualny
+Aplikacja osadzona jest w wirtualnym, realistycznie odwzorowanym gabinecie stomatologicznym, aby maksymalnie przybliżyć warunki rzeczywistych zabiegów.
 
-Aplikacja ma umożliwiać bezpieczne i powtarzalne ćwiczenia umiejętności stomatologicznych bez ryzyka dla pacjenta — pozwala to użytkownikom nabyć doświadczenie, dokładność oraz pewność w wykonywaniu procedur.
+### Styl Wizualny
+Fotorealistyczny, z naciskiem na:
+- Dokładne odwzorowanie narzędzi dentystycznych.
+- Szczegółowy i anatomicznie poprawny model jamy ustnej.
+- Nowoczesne i intuicyjne panele UI unoszące się w przestrzeni 3D.
 
-### Uzasadnienie 
+---
 
-Aplikacja umożliwia bezpieczne i powtarzalne ćwiczenie nawet trudnych lub rzadkich procedur przy niższych kosztach niż w przypadku tradycyjnych fantomów. Zapewnia większe bezpieczeństwo przed wejściem do realnej praktyki i pozwala użytkownikom rozwijać umiejętności w kontrolowanym środowisku. Wsparcie LLM dodatkowo podnosi skuteczność nauki, udzielając bieżących wskazówek oraz sugerując właściwe narzędzia.
+## III. Scenariusz i Mechanika
 
-### Ryzyka wdrażania rozwiązania 
+### Elementy Rozgrywki
+Użytkownik wybiera jedną z dostępnych procedur (np. ekstrakcja zęba, przygotowanie ubytku), a następnie wykonuje ją krok po kroku w wirtualnym środowisku. Aplikacja może działać w dwóch trybach:
+1.  **Tryb Nauki:** Z podpowiedziami i wskazówkami od asystenta.
+2.  **Tryb Egzaminu:** Bez wsparcia, weryfikujący nabyte umiejętności.
 
-Główne ryzyka dotyczą zapewnienia wystarczającego realizmu i ograniczeń sprzętowych gogli XR, a także konieczności ciągłych konsultacji z ekspertami, aby zachować zgodność z procedurami.
+### Mechanika Aplikacji
+Symulacja bazuje na realistycznym operowaniu narzędziami i precyzyjnym śledzeniu ich ruchów. System ocenia kluczowe parametry, takie jak:
+- Kąt pracy narzędzia.
+- Siła nacisku.
+- Prawidłowa sekwencja działań.
 
-## Część II: Aspekt wyglądu docelowego rozwiązania [proszę zdefiniować, jak chcielibyście aby wyglądała docelowa aplikacja] 
+### Punktacja i Osiągnięcia
+Na koniec każdej procedury użytkownik otrzymuje ocenę opartą na:
+- **Dokładności:** Precyzja wykonania poszczególnych kroków.
+- **Czasie:** Czas ukończenia zabiegu.
+- **Liczbie błędów:** Rejestrowanie nieprawidłowych interakcji.
+- **Płynności:** Efektywność w obsłudze narzędzi.
 
-### Dzwięk: 
+Wyniki są zapisywane, co pozwala śledzić postępy i rozwój umiejętności.
 
-Realistyczne odgłosy narzędzi (np. wierteł, ssaków), sygnały dźwiękowe potwierdzające poprawną interakcję, ???głosowy asystent LLM wyjaśniający procedury na bieżąco.???
-
-### Przewodni temat wizualny: 
-
-Realistyczny gabinet stomatologiczny, aby jak najlepiej odwzorować rzeczywiste zabiegi. 
-
-### Styl wizualny: 
-
-Fotorealistyczny, z naciskiem na: odwzorowanie narzędzi dentystycznych, szczegółowy model jamy ustnej, intuicyjne i nowoczesne panele UI w przestrzeni 3D. Wizualnie aplikacja może przypominać symulatory chirurgiczne typu „Touch Surgery VR”.
-
-## Część III: Scenariusz/Gameplay [proszę zdefiniować, jak będzie działała docelowa aplikacja] 
-
-### Elementy rozgrywki jeśli dotyczy: 
-
-Użytkownik wybiera jedną z dostępnych procedur stomatologicznych (np. wyrywanie zęba) i wykonuje ją w realistycznym środowisku, podczas gdy drugi uczestnik może pełnić rolę instruktora. Przebieg zabiegu wspomaga asystent LLM, udzielając wskazówek.
-
-### Mechanika gry/aplikacji: 
-
-Symulacja opiera się na realistycznym operowaniu narzędziami dentystycznymi i reagującą na działania użytkownika. System rejestruje błędy, np. zbyt mocny nacisk lub niewłaściwy kąt pracy, a aplikacja może działać zarówno w trybie nauki z podpowiedziami LLM, jak i w trybie bez wsparcia.
-
-### Punktacje/osiągnięcia: 
-
-Ocena użytkownika obejmuje dokładność wykonania procedury, czas, liczbę błędów oraz płynność obsługi narzędzi, a wyniki przekładają się na rosnący poziom doświadczenia.
-
-### Mechanika interfejsu użytkownika: 
-
-Interfejs składa się z pływających paneli 3D prezentujących informacje i narzędzia, oraz kontekstowego menu wywoływanego gestem lub kontrolerem, a asystent LLM pojawia się w formie dymków lub ???komunikatów głosowych???.
-
-### Sposób nawigacji, 
-
-### Zaplanowane/zaprojektowane możliwe interakcje, 
-
-
-## Część IV: Docelowa platforma [proszę zdefiniować docelową platformę] 
-
-Np. Android/iOS (ARCore/ARKit). i uzupełnić opis o minimalne wymagania 
-
- 
+### Interfejs Użytkownika (UI)
+- **Panele 3D:** Pływające w przestrzeni okna z informacjami o procedurze, statystykami i wyborem narzędzi.
+- **Menu Kontekstowe:** Wywoływane za pomocą gestów, umożliwiające szybki dostęp do opcji.
+- **Wskazówki Asystenta:** Wyświetlane w formie dymków informacyjnych lub (w przyszłości) komunikatów głosowych.
