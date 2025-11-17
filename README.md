@@ -55,8 +55,10 @@ Wizualnie aplikacja może przypominać profesjonalne symulatory chirurgiczne, ta
 ## Część III: Scenariusz/Gameplay
 
 ### Elementy rozgrywki jeśli dotyczy:
-Użytkownik wybiera jedną z dostępnych procedur (np. ekstrakcja zęba, przygotowanie ubytku), a następnie wykonuje ją krok po kroku w wirtualnym środowisku. Aplikacja oferuje dwa tryby:
-1.  **Tryb Nauki:** Z podpowiedziami i wskazówkami od asystenta.
+Użytkownik wybiera jedną z dostępnych procedur stomatologicznych (np. wyrywanie zęba) i wykonuje ją w realistycznym środowisku. Drugi uczestnik (np. instruktor) może dołączyć do tej samej sesji, aby obserwować przebieg zabiegu, nadzorować działania i udzielać wskazówek w czasie rzeczywistym.
+
+Przebieg zabiegu może być dodatkowo wspomagany przez asystenta LLM, który udziela kontekstowych wskazówek. Aplikacja oferuje dwa główne tryby:
+1.  **Tryb Nauki:** Z podpowiedziami i wsparciem instruktora lub asystenta.
 2.  **Tryb Egzaminu:** Bez wsparcia, weryfikujący nabyte umiejętności.
 
 ### Mechanika gry/aplikacji:
@@ -73,23 +75,4 @@ Wyniki są zapisywane, co pozwala śledzić postępy.
 ### Mechanika interfejsu użytkownika:
 - **Panele 3D:** Pływające w przestrzeni okna z informacjami o procedurze, statystykami i wyborem narzędzi.
 - **Menu Kontekstowe:** Wywoływane za pomocą gestów, umożliwiające szybki dostęp do opcji.
-- **Wskazówki Asystenta:** Wyświetlane w formie dymków informacyjnych lub (w przyszłości) komunikatów głosowych.
-
-### Sposób nawigacji,
-Nawigacja odbywa się za pomocą gestów dłoni i śledzenia wzroku, co pozwala na intuicyjną interakcję z panelami UI i narzędziami.
-
-### Zaplanowane/zaprojektowane możliwe interakcje,
-- Wybór i chwytanie narzędzi.
-- Precyzyjne operowanie narzędziami w jamie ustnej pacjenta (wiercenie, podważanie, badanie).
-- Interakcja z panelami UI w celu śledzenia postępów i odczytywania instrukcji.
-
----
-
-## Część IV: Docelowa platforma
-
-### Platforma:
-Apple Vision (visionOS)
-
-### Minimalne wymagania:
-- Urządzenie: Apple Vision Pro
-- System operacyjny: visionOS 1.0 lub nowszy
+- **Wskazówki Asystenta:** Wyświetlane w formie dymków informacyjnych lub (w
