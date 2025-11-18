@@ -71,4 +71,5 @@ Ocena użytkownika obejmuje dokładność wykonania procedury, czas, liczbę bł
 - **Wskazówki Asystenta:** Wyświetlane w formie dymków informacyjnych lub (w przyszłości) komunikatów głosowych.
 
 ### Sposób nawigacji,
-N
+- Nawigacja opiera się na naturalnych gestach visionOS: użytkownik wskazuje palcem element interfejsu i zatwierdza wybór lekkim „szczypnięciem”.
+- Pozycjonowanie wirtualnego gabinetu odbywa się poprzez ruch głowy i ciała.
