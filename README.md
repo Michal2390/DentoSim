@@ -48,7 +48,7 @@ Fotorealistyczny, z naciskiem na:
 - Dokładne odwzorowanie narzędzi dentystycznych.
 - Szczegółowy i anatomicznie poprawny model jamy ustnej.
 - Nowoczesne i intuicyjne panele UI unoszące się w przestrzeni 3D.
-Wizualnie aplikacja może przypominać profesjonalne symulatory chirurgiczne, takie jak „Touch Surgery VR”.
+Wizualnie aplikacja może przypominać profesjonalne symulatory chirurgiczne, takie jak „Touch Surgery VR".
 
 ---
 
@@ -71,5 +71,24 @@ Ocena użytkownika obejmuje dokładność wykonania procedury, czas, liczbę bł
 - **Wskazówki Asystenta:** Wyświetlane w formie dymków informacyjnych lub (w przyszłości) komunikatów głosowych.
 
 ### Sposób nawigacji,
-- Nawigacja opiera się na naturalnych gestach visionOS: użytkownik wskazuje palcem element interfejsu i zatwierdza wybór lekkim „szczypnięciem”.
+- Nawigacja opiera się na naturalnych gestach visionOS: użytkownik wskazuje palcem element interfejsu i zatwierdza wybór lekkim „szczypnięciem".
 - Pozycjonowanie wirtualnego gabinetu odbywa się poprzez ruch głowy i ciała.
+
+---
+
+## Część IV: Architektura Techniczna
+
+### Stack Technologiczny:
+
+#### Główne Technologie:
+- **visionOS** – system operacyjny Apple Vision Pro
+- **SwiftUI** – framework do budowy interfejsu użytkownika
+- **RealityKit** – framework do renderowania i interakcji z obiektami 3D
+- **Swift Concurrency** – async/await dla asynchronicznych operacji
+- **Observation Framework** (@Observable) – nowoczesny system reaktywny zastępujący ObservableObject
+
+#### Integracja AI:
+- **OpenAI API (GPT-4)** – asystent AI do wsparcia podczas procedur
+- **RESTful HTTP Communication** – komunikacja z zewnętrznymi serwisami AI
+
+### Struktura Projektu:
