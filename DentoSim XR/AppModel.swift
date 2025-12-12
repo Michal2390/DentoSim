@@ -24,6 +24,7 @@ class AppModel {
     var isTrainingMode: Bool = true
     var showInstructions: Bool = true
     var selectedToothID: Int? = nil
+    var showChat: Bool = false
     
     func startProcedure(_ module: ProcedureModule) {
         sessionData.currentModule = module

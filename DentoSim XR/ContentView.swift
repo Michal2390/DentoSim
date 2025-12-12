@@ -157,6 +157,7 @@ struct DifficultyBadge: View {
 
 struct ModuleDetailView: View {
     @Environment(AppModel.self) private var appModel
+    @Environment(AIManager.self) private var aiManager
     let module: ProcedureModule
     
     var body: some View {
@@ -171,12 +172,39 @@ struct ModuleDetailView: View {
                 Divider()
                 
                 HStack(spacing: 20) {
+                    Button {
+                        aiManager.initializeSystemMessage(for: module)
+                        appModel.showChat.toggle()
+                    } label: {
+                        HStack {
+                            Image(systemName: "brain.head.profile")
+                                .font(.title3)
+                            Text("Ask AI Assistant")
+                                .font(.title3)
+                                .fontWeight(.semibold)
+                        }
+                        .frame(maxWidth: .infinity)
+                        .padding()
+                        .background(Color.purple.gradient)
+                        .foregroundStyle(.white)
+                        .clipShape(RoundedRectangle(cornerRadius: 15))
+                    }
+                    .buttonStyle(.plain)
+                    
                     ToggleImmersiveSpaceButton(module: module)
                         .frame(maxWidth: .infinity)
                 }
             }
             .padding(40)
         }
+        .overlay(alignment: .trailing) {
+            if appModel.showChat {
+                ChatAssistantView()
+                    .padding(.trailing, 40)
+                    .transition(.move(edge: .trailing).combined(with: .opacity))
+            }
+        }
+        .animation(.spring(response: 0.4, dampingFraction: 0.8), value: appModel.showChat)
     }
     
     private var headerSection: some View {

@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8607047C2ECAE6C8006989E9 /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = 8607047B2ECAE6C8006989E9 /* RealityKitContent */; };
+		860705432ECB499F006989E9 /* RealityKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 860705412ECB4996006989E9 /* RealityKit.framework */; };
+		860705442ECB499F006989E9 /* RealityKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 860705412ECB4996006989E9 /* RealityKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -20,10 +21,25 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		860705452ECB499F006989E9 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				860705442ECB499F006989E9 /* RealityKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		860704762ECAE6C8006989E9 /* DentoSim XR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DentoSim XR.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8607047A2ECAE6C8006989E9 /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
 		860704922ECAE6CA006989E9 /* DentoSim XRTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DentoSim XRTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		860705412ECB4996006989E9 /* RealityKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealityKit.framework; path = System/Library/Frameworks/RealityKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -57,7 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8607047C2ECAE6C8006989E9 /* RealityKitContent in Frameworks */,
+				860705432ECB499F006989E9 /* RealityKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +93,7 @@
 				860704782ECAE6C8006989E9 /* DentoSim XR */,
 				860704792ECAE6C8006989E9 /* Packages */,
 				860704952ECAE6CA006989E9 /* DentoSim XRTests */,
+				860705402ECB4995006989E9 /* Frameworks */,
 				860704772ECAE6C8006989E9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -98,6 +115,14 @@
 			path = Packages;
 			sourceTree = "<group>";
 		};
+		860705402ECB4995006989E9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				860705412ECB4996006989E9 /* RealityKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -108,6 +133,7 @@
 				860704722ECAE6C8006989E9 /* Sources */,
 				860704732ECAE6C8006989E9 /* Frameworks */,
 				860704742ECAE6C8006989E9 /* Resources */,
+				860705452ECB499F006989E9 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -118,7 +144,6 @@
 			);
 			name = "DentoSim XR";
 			packageProductDependencies = (
-				8607047B2ECAE6C8006989E9 /* RealityKitContent */,
 			);
 			productName = "DentoSim XR";
 			productReference = 860704762ECAE6C8006989E9 /* DentoSim XR.app */;
@@ -471,13 +496,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		8607047B2ECAE6C8006989E9 /* RealityKitContent */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = RealityKitContent;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8607046E2ECAE6C8006989E9 /* Project object */;
 }
