@@ -42,6 +42,18 @@ The application reduces training costs compared to traditional phantoms while in
 
 -----
 
+## 3D Models Preview
+
+The simulation utilizes high-fidelity, anatomically correct 3D models to ensure medical accuracy. Below are previews of the assets used for molars, premolars, and anterior teeth:
+
+| Molar (Occlusal View) | Premolar |
+| :---: | :---: |
+| ![Molar Top View](https://github.com/user-attachments/assets/0c01f084-ed38-42c2-baad-5ac005d00357) | ![Premolar](https://github.com/user-attachments/assets/025dd432-7107-4de8-9a81-ed7eeeb08ddf) |
+| **Molar (Root View)** | **Incisor / Canine** |
+| ![Molar Side View](https://github.com/user-attachments/assets/cc387b25-2143-4e3d-b4b4-a0f2a3e29a0a) | ![Incisor](https://github.com/user-attachments/assets/c0eed3e9-ca92-4a32-957b-e8220a5512ed) |
+
+-----
+
 ## Part II: Visual & Audio Aspects
 
 ### Audio:
